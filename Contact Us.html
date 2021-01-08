@@ -1,0 +1,166 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+    <script>
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat:31.5890431, lng:74.3388373 },
+                zoom: 8,
+            });
+        }
+    </script>
+
+    <style>
+
+        .column {
+            float: left;
+            width: 30%;
+
+            padding-left: 5px;
+            padding-right: 1px;
+            padding-bottom: 10px;
+
+        }
+        .cssclass{
+        margin:20px 20px 0px 0px;
+        float: right;
+
+        }
+        .cssclass1{
+            margin:300px -400px 0px 0px;
+            float: right;
+
+        }
+
+#menu ul{
+list-style:none;
+margin : 0px px 0px 250px;
+}
+#menu ul li{
+width:300px;
+height:23px;
+background-color:aqua;
+border:none;
+text-align:center;
+padding-top:50x;
+float: left;
+}
+#menu ul li a{
+	color:white;
+	text-decoration:none;
+	padding-right:5px;
+	text-align:center;
+}
+.linee{
+		display: inline-block;
+		margin : 20px 0px 0px 0px;
+}
+
+</style>
+</head>
+<body  style="background-color:white;">
+
+<div class="row" >
+    <div class="col-md-6" >
+        <a href="Home.php"> <img  style="margin : 20px 0px 0px 20px;" src="Img/Logo.png" width="150" height="140" ></a>
+    </div>
+    <div class="col-md-6 linee" >
+        <img style="margin : 0px 0px 0px 300px;" src="Img/facebook.png" width="30" height="30">
+        <img  src="Img/phone.png" width="30" height="30">
+        <img  src="Img/twitter.png" width="30" height="30">
+        <img  src="Img/instagram.png" width="30" height="30">
+        <img  src="Img/youtube.png" width="30" height="30">
+
+    </div>
+</div>
+<div class="row" style="background-color:aqua">
+    <div class="col-md-12"  >
+        <div id="menu" >
+            <ul>
+
+                <li> <a href="Home.php"> <b style="color: black"> Home</b> </li>
+                <li> <a href="About Us.html" > <b style="color: black">About US</b> </li>
+                <li> <a href="Products.html"> <b style="color: black">Products </b></li>
+                <li> <a href="Contact Us.html"> <b style="color: black">Contact Us </b></li></a>
+                <li> <a href="login.php"> <b style="color: black">Login </b></li></a>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+
+<h2><u><b>
+    <br>Contact Us
+</b></u><h2>
+<div>
+<form >
+    <div class="cssclass">
+        <h3><b><u>Business Address</u></b> </h3>
+        <p><b>Street:</b>  1st Floor, Al-Madina Road Township,<br>
+            <b>City:</b>   Lahore<br>
+            <b>State/province/area:</b>    Punjab<br>
+            <b>Phone number:</b>  9242-5114349<br>
+            <b>Country calling code:</b>  +92<br>
+            <b>Country:</b>  Pakistan</p>
+    </div>
+    <div>
+
+        <div id="map" class="cssclass1" style="width:30%;height:300px;"></div>
+
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+    </div>
+
+    Name:  <input type="text"><br><br>
+    Email: <input type="email"><br><br>
+    Phone: <input type="number"><br><br>
+    Role:  <input type="radio"> Student <input type="radio"> Teacher <br><br>
+    City: <select><br><br>
+    <option value="none">select city</option>
+    <option value="Lahore" selected>Lahore</option>
+    <option value="Karchi">Karachi</option>
+    <option value="Multan">Multan</option>
+    <option value="Islamabad">Islmabad</option>
+
+</select><br><br>
+    Message: <br><textarea name="textarea" cols="20"rows="6"></textarea><br><br>
+    <input type="submit">
+
+
+</form>
+
+
+
+</div>
+
+
+
+    </div>
+    <div class="row" style="background-color:black" >
+        <div class="col-md-6" >
+
+        </div>
+        <div class="col-md-6 linee" style="background-color:black" >
+            <img style="margin : 0px 0px 0px 300px;" src="Img/facebook.png" width="30" height="30">
+            <img  src="Img/phone.png" width="30" height="30">
+            <img  src="Img/twitter.png" width="30" height="30">
+            <img  src="Img/instagram.png" width="30" height="30">
+            <img  src="Img/youtube.png" width="30" height="30">
+        </div>
+    </div>
+
+
+</body>
+</html>

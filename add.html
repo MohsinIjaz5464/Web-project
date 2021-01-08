@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>Add Data</title>
+	<link href="mystyle1.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+	<style>
+		.topnav1 {
+			overflow: hidden;
+			background-color: aqua;
+		}
+
+		/* Style the topnav links */
+		.topnav1 a {
+			float: left;
+			display: block;
+			color: black;
+			text-align: center;
+			padding: 0.5% 15%;
+			text-decoration: none;
+		}
+
+
+		.topnav1 a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+<div class="row" >
+	<div class="col-md-6" >
+		<a href="Home.php"> <img  style="margin : 20px 0px 0px 20px;" src="Img/Logo.png" width="150" height="140" ></a>
+	</div>
+	<div class="col-md-6 linee" >
+		<div style="margin: 2% 35%">
+			<img  src="Img/facebook.png" width="30" height="30">
+			<img  src="Img/phone.png" width="30" height="30">
+			<img  src="Img/twitter.png" width="30" height="30">
+			<img  src="Img/instagram.png" width="30" height="30">
+			<img  src="Img/youtube.png" width="30" height="30">
+		</div>
+	</div>
+</div>
+
+<div class="topnav1">
+	<a href="Home.php">Home</a>
+	<a href="view.php">View Products</a>
+	<a href="logout.php">Logout</a>
+</div>
+
+
+
+<div class="row">
+
+	<div class="column" style="border: 2px solid black">
+
+	<form action="add.php" method="post" name="form1" enctype="multipart/form-data">
+		<table width="100%" border="0" >
+			<tr> 
+				<td>ID</td>
+				<td><input type="text" name="productid"></td>
+			</tr>
+			<tr> 
+				<td>Name</td>
+				<td><input type="text" name="productname"></td>
+			</tr>
+			<tr> 
+				<td>Price</td>
+				<td><input type="text" name="price"></td>
+			</tr>
+			<tr>
+				<td>Code</td>
+				<td><input type="text" name="productcode"></td>
+			</tr>
+			<tr>
+				<td>In stock</td>
+				<td><input type="text" name="productinstock"></td>
+			</tr>
+			<tr>
+				<td>Discount</td>
+				<td><input type="text" name="productdiscount"></td>
+			</tr>
+			<tr>
+				<td>Sizes</td>
+				<td><input type="text" name="productsizes"></td>
+			</tr>
+			<tr>
+				<td>Detail</td>
+				<td><input type="text" name="productdetail"></td>
+			</tr>
+			<tr>
+				<td>Image</td>
+				<td><input type="file" name="productimg"></td>
+			</tr>
+
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Add"></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+</div>
+</body>
+</html>
+
